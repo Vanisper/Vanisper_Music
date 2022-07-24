@@ -45,6 +45,7 @@ function App() {
           </code>
         </pre>
       </div>
+      <button className="btn btn-primary">daisyUI Button</button>
     </div>
   );
 }

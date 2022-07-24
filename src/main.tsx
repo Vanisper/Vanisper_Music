@@ -1,8 +1,9 @@
 import ReactDOM from "react-dom/client";
+
+import("@/css/index.less"); // 引入样式
 import App from "./pages/App";
-import config from "../config/app.json";
+import config from "../config/app.json";  // 引入配置文件
 import { scalable } from "./utils/scalable/index";
-import("./assets/css/index.less");
 
 scalable();
 document.title = config.app_name;
