@@ -1,0 +1,90 @@
+@import url("../../../app.less");
+blockquote {
+  border-left: 4px solid var(--border-secondary);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+
+  p {
+    margin: 0;
+  }
+}
+
+pre,
+code,
+.code-example {
+  border-radius: var(--elem-radius);
+  font-size: var(--type-base-font-size-rem);
+}
+
+code {
+  background: var(--code-background-inline);
+  padding: 0.125rem 0.25rem;
+  width: fit-content;
+}
+
+pre {
+  padding: 1rem 2.5rem 1rem 1rem;
+  margin: 1rem 0 2rem 0;
+  background-color: var(--code-background-block);
+  border: 1px solid transparent;
+
+  code {
+    color: var(--text-primary);
+    background: none;
+    padding: 0;
+  }
+}
+
+pre {
+  // 设置如何处理元素中的 空白
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-example {
+  color: var(--code-default);
+  position: relative;
+
+  .copy-icon {
+    border-radius: var(--elem-radius);
+    cursor: pointer;
+    height: 1.25rem;
+    mask-image: url("./assets/icons/clippy.svg");
+    mask-size: cover;
+    -webkit-mask-image: url("./assets/icons/clippy.svg");
+    -webkit-mask-size: cover;
+    margin: 0;
+    padding: 0.25rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.75rem;
+    width: 1.25rem;
+    opacity: 0.4;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .copy-icon-message {
+    background: var(--text-primary);
+    border-radius: var(--elem-radius);
+    color: var(--text-invert);
+    font-size: 0.8125rem;
+    opacity: 1;
+    padding: 0.125rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 15px;
+  }
+
+  .example-good,
+  .example-bad {
+    padding: 1rem;
+  }
+}

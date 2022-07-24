@@ -1,0 +1,101 @@
+:root {
+  --main-background-color: #0078d4;
+  --main-font-color: #fff;
+  --border-container-size: 25px;
+  --border-warpper-size: 26px;
+  --border-out-width: 3px;
+  --border-rotate: -45deg;
+  --border-speed: 1000ms;
+}
+
+.loading-container {
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-font-color);
+  background-color: var(--main-background-color);
+  //
+  user-select: none;
+
+  img {
+    overflow: hidden;
+    width: 200px;
+    -webkit-user-drag: none;
+    filter: drop-shadow(0px 0px 2.5px rgba(0, 0, 0, 0.8));
+  }
+  .loading-progress {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    span {
+      position: relative;
+      display: inline-block;
+      height: var(--border-container-size);
+      width: var(--border-container-size);
+      transform: rotate(var(--border-rotate));
+      border: var(--border-out-width) solid transparent;
+      border-radius: 50%;
+      animation: rotate360 calc(2 * var(--border-speed)) infinite linear;
+      @keyframes rotate360 {
+        0% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+      &::after {
+        position: absolute;
+        top: calc(-1 * var(--border-out-width));
+        left: calc(-1 * var(--border-out-width));
+        content: "";
+        display: inline-block;
+        height: var(--border-container-size);
+        width: var(--border-container-size);
+        border-radius: 50%;
+        border: var(--border-out-width) solid transparent;
+        border-left: var(--border-out-width) solid var(--main-font-color);
+        border-top: var(--border-out-width) solid var(--main-font-color);
+        animation: rotate180 calc(1.5 * var(--border-speed)) infinite linear
+          alternate;
+      }
+      @keyframes rotate180 {
+        to {
+          transform: rotate(180deg);
+        }
+      }
+      &::before {
+        content: "";
+        display: inline-block;
+        height: var(--border-warpper-size);
+        width: var(--border-warpper-size);
+        position: absolute;
+        top: calc(
+          (var(--border-container-size) - var(--border-warpper-size)) / 2 -
+            var(--border-out-width)
+        );
+        left: calc(
+          (var(--border-container-size) - var(--border-warpper-size)) / 2 -
+            var(--border-out-width)
+        );
+        border: var(--border-out-width) solid transparent;
+        border-right: var(--border-out-width) solid var(--main-background-color);
+        border-bottom: var(--border-out-width) solid
+          var(--main-background-color);
+        z-index: 1;
+        background-color: var(--main-background-color);
+        clip-path: inset(0 48% 0 0);
+        transform: rotate(calc(-1 * var(--border-rotate)));
+      }
+    }
+  }
+}

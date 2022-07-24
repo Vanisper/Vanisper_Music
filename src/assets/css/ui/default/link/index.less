@@ -1,0 +1,95 @@
+@import url("../../../app.less");
+a {
+  color: var(--text-link);
+  // 拓展链链接： 加一个小尾巴
+  &.external:after {
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+    background-color: var(--icon-primary);
+    -webkit-mask-image: url("./assets/icons/external.svg");
+    mask-image: url("./assets/icons/external.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    content: "";
+  }
+
+  &:not(.button) {
+    text-decoration: underline;
+    width: fit-content;
+    &:active {
+      background-color: var(--text-link);
+      color: white;
+
+      code {
+        background-color: transparent;
+        color: white;
+      }
+    }
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+    &[id^="attr-"] {
+      &:link,
+      &:visited {
+        color: var(--text-link);
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: white;
+      }
+    }
+
+    &[aria-current] {
+      color: var(--text-link);
+      font-weight: var(--font-body-strong-weight);
+      text-decoration: none;
+    }
+  }
+}
+
+// a:not(.button) {
+//   color: var(--text-link);
+//   width: fit-content;
+
+//   &:active {
+//     background-color: var(--text-link);
+//     color: white;
+
+//     code {
+//       background-color: transparent;
+//       color: white;
+//     }
+//   }
+
+//   &[id^="attr-"] {
+//     &:link,
+//     &:visited {
+//       color: var(--text-link);
+//       text-decoration: none;
+//     }
+
+//     &:hover,
+//     &:focus {
+//       text-decoration: underline;
+//     }
+
+//     &:active {
+//       color: white;
+//     }
+//   }
+
+//   &[aria-current] {
+//     color: var(--text-link);
+//     font-weight: var(--font-body-strong-weight);
+//     text-decoration: none;
+//   }
+// }

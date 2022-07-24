@@ -1,0 +1,185 @@
+@import url("./color-palette.less");
+// mixin
+.light-theme() {
+  color-scheme: light;
+  --text-primary: @theme-light-text-primary;
+  --text-secondary: @theme-light-text-secondary;
+  --text-inactive: @theme-light-text-inactive;
+  --text-link: @theme-light-text-link;
+  --text-invert: @theme-light-text-invert;
+  --text-primary-red: @theme-light-text-primary-red;
+  --text-primary-green: @theme-light-text-primary-green;
+  --text-primary-blue: @theme-light-text-primary-blue;
+  --text-primary-yellow: @theme-light-text-primary-yellow;
+
+  --background-primary: @theme-light-background-primary;
+  --background-secondary: @theme-light-background-secondary;
+  --background-tertiary: @theme-light-background-tertiary;
+  --background-toc-active: @theme-light-background-toc-active;
+
+  --border-primary: @theme-light-border-primary;
+  --border-secondary: @theme-light-border-secondary;
+
+  --button-primary-default: @theme-light-button-primary-default;
+  --button-primary-hover: @theme-light-button-primary-hover;
+  --button-primary-active: @theme-light-button-primary-active;
+  --button-primary-inactive: @theme-light-button-primary-inactive;
+
+  --button-secondary-default: @theme-light-button-secondary-default;
+  --button-secondary-hover: @theme-light-button-secondary-hover;
+  --button-secondary-active: @theme-light-button-secondary-active;
+  --button-secondary-inactive: @theme-light-button-secondary-inactive;
+  --button-secondary-border-focus: @theme-light-button-secondary-border-focus;
+  --button-secondary-border-red: @theme-light-button-secondary-border-red;
+  --button-secondary-border-red-focus: @theme-light-button-secondary-border-red-focus;
+
+  --icon-primary: @theme-light-icon-primary;
+  --icon-secondary: @theme-light-icon-secondary;
+  --icon-information: @theme-light-icon-information;
+  --icon-warning: @theme-light-icon-warning;
+  --icon-critical: @theme-light-icon-critical;
+  --icon-success: @theme-light-icon-success;
+
+  --accent-primary: @theme-light-accent-primary;
+
+  --shadow-01: @theme-light-shadow-01;
+  --shadow-02: @theme-light-shadow-02;
+  --focus-01: @theme-light-focus-01;
+  --field-focus-border: @theme-light-field-focus-border;
+
+  --code-token-tag: @theme-light-code-token-tag;
+  --code-token-punctuation: @theme-light-code-token-punctuation;
+  --code-token-attribute-name: @theme-light-code-token-attribute-name;
+  --code-token-attribute-value: @theme-light-code-token-attribute-value;
+  --code-token-comment: @theme-light-code-token-comment;
+  --code-token-default: @theme-light-code-token-default;
+  --code-token-selector: @theme-light-code-token-selector;
+  --code-background-inline: @theme-light-code-background-inline;
+  --code-background-block: @theme-light-code-background-block;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-color: rgba(0, 0, 0, 0.25);
+
+  --category-color: @theme-light-category-color;
+  --category-color-background: @theme-light-category-color-background;
+  --code-color: @theme-light-code-color;
+  --mark-color: @theme-light-mark-color;
+
+  --plus-code-color: @theme-light-plus-code-color;
+  --html-code-color: @theme-light-html-code-color;
+  --css-code-color: @theme-light-css-code-color;
+  --js-code-color: @theme-light-js-code-color;
+  --http-code-color: @theme-light-http-code-color;
+  --apis-code-color: @theme-light-apis-code-color;
+  --learn-code-color: @theme-light-learn-code-color;
+
+  --plus-mark-color: @theme-light-plus-mark-color;
+  --html-mark-color: @theme-light-html-mark-color;
+  --css-mark-color: @theme-light-css-mark-color;
+  --js-mark-color: @theme-light-js-mark-color;
+  --http-mark-color: @theme-light-http-mark-color;
+  --apis-mark-color: @theme-light-apis-mark-color;
+  --learn-mark-color: @theme-light-learn-mark-color;
+}
+.light-dark() {
+  color-scheme: dark;
+  --text-primary: @theme-dark-text-primary;
+  --text-secondary: @theme-dark-text-secondary;
+  --text-inactive: @theme-dark-text-inactive;
+  --text-link: @theme-dark-text-link;
+  --text-invert: @theme-dark-text-invert;
+  --text-primary-red: @theme-dark-text-primary-red;
+  --text-primary-green: @theme-dark-text-primary-green;
+  --text-primary-blue: @theme-dark-text-primary-blue;
+  --text-primary-yellow: @theme-dark-text-primary-yellow;
+
+  --background-primary: @theme-dark-background-primary;
+  --background-secondary: @theme-dark-background-secondary;
+  --background-tertiary: @theme-dark-background-tertiary;
+  --background-toc-active: @theme-dark-background-toc-active;
+
+  --border-primary: @theme-dark-border-primary;
+  --border-secondary: @theme-dark-border-secondary;
+
+  --button-primary-default: @theme-dark-button-primary-default;
+  --button-primary-hover: @theme-dark-button-primary-hover;
+  --button-primary-active: @theme-dark-button-primary-active;
+  --button-primary-inactive: @theme-dark-button-primary-inactive;
+
+  --button-secondary-default: @theme-dark-button-secondary-default;
+  --button-secondary-hover: @theme-dark-button-secondary-hover;
+  --button-secondary-active: @theme-dark-button-secondary-active;
+  --button-secondary-inactive: @theme-dark-button-secondary-inactive;
+  --button-secondary-border-focus: @theme-light-button-secondary-border-focus;
+  --button-secondary-border-red: @theme-light-button-secondary-border-red;
+  --button-secondary-border-red-focus: @theme-light-button-secondary-border-red-focus;
+
+  --icon-primary: @theme-dark-icon-primary;
+  --icon-secondary: @theme-dark-icon-secondary;
+  --icon-information: @theme-dark-icon-information;
+  --icon-warning: @theme-dark-icon-warning;
+  --icon-critical: @theme-dark-icon-critical;
+  --icon-success: @theme-dark-icon-success;
+
+  --accent-primary: @theme-dark-accent-primary;
+
+  --shadow-01: @theme-dark-shadow-01;
+  --shadow-02: @theme-dark-shadow-02;
+  --focus-01: @theme-dark-focus-01;
+  --field-focus-border: @theme-dark-field-focus-border;
+
+  --code-token-tag: @theme-dark-code-token-tag;
+  --code-token-punctuation: @theme-dark-code-token-punctuation;
+  --code-token-attribute-name: @theme-dark-code-token-attribute-name;
+  --code-token-attribute-value: @theme-dark-code-token-attribute-value;
+  --code-token-comment: @theme-dark-code-token-comment;
+  --code-token-default: @theme-dark-code-token-default;
+  --code-token-selector: @theme-dark-code-token-selector;
+  --code-background-inline: @theme-dark-code-background-inline;
+  --code-background-block: @theme-dark-code-background-block;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-color: rgba(255, 255, 255, 0.25);
+
+  --category-color: @theme-dark-category-color;
+  --category-color-background: @theme-dark-category-color-background;
+  --code-color: @theme-dark-code-color;
+  --mark-color: @theme-dark-mark-color;
+
+  --plus-code-color: @theme-dark-plus-code-color;
+  --html-code-color: @theme-dark-html-code-color;
+  --css-code-color: @theme-dark-css-code-color;
+  --js-code-color: @theme-dark-js-code-color;
+  --http-code-color: @theme-dark-http-code-color;
+  --apis-code-color: @theme-dark-apis-code-color;
+  --learn-code-color: @theme-dark-learn-code-color;
+
+  --plus-mark-color: @theme-dark-plus-mark-color;
+  --html-mark-color: @theme-dark-html-mark-color;
+  --css-mark-color: @theme-dark-css-mark-color;
+  --js-mark-color: @theme-dark-js-mark-color;
+  --http-mark-color: @theme-dark-http-mark-color;
+  --apis-mark-color: @theme-dark-apis-mark-color;
+  --learn-mark-color: @theme-dark-learn-mark-color;
+}
+.light {
+  .light-theme();
+}
+
+.dark {
+  .light-dark();
+}
+body,
+:root {
+  --color-white: #fff;
+}
+// OS Default.
+:root:not(.light):not(.dark) {
+  @media (prefers-color-scheme: light) {
+    .light-theme();
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .light-dark();
+  }
+}
