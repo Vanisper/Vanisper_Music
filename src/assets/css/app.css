@@ -2,7 +2,7 @@
 /* Light */
 .light {
   color-scheme: light;
-  --text-primary: #1b1b1b;
+  --text-primary: #3d4451;
   --text-secondary: #4e4e4e;
   --text-inactive: #9e9e9ea6;
   --text-link: #0069c2;
@@ -17,10 +17,10 @@
   --background-toc-active: #ebeaea;
   --border-primary: #cdcdcd;
   --border-secondary: #cdcdcd;
-  --button-primary-default: #1b1b1b;
+  --button-primary-default: #3d4451;
   --button-primary-hover: #696969;
   --button-primary-active: #9e9e9e;
-  --button-primary-inactive: #1b1b1b;
+  --button-primary-inactive: #3d4451;
   --button-secondary-default: #fff;
   --button-secondary-hover: #cdcdcd;
   --button-secondary-active: #cdcdcd;
@@ -35,6 +35,39 @@
   --icon-critical: #d30038;
   --icon-success: #007936;
   --accent-primary: #0085f2;
+  --shadow-01: 0px 1px 2px rgba(43, 42, 51, 0.05);
+  --shadow-02: 0px 1px 6px rgba(43, 42, 51, 0.1);
+  --focus-01: 0px 0px 0px 3px rgba(0, 144, 237, 0.4);
+  --field-focus-border: #0085f2;
+  --code-token-tag: #0069c2;
+  --code-token-punctuation: #9e9e9e;
+  --code-token-attribute-name: #d30038;
+  --code-token-attribute-value: #007936;
+  --code-token-comment: #9e9e9e;
+  --code-token-default: #3d4451;
+  --code-token-selector: #872bff;
+  --code-background-inline: #f2f1f1;
+  --code-background-block: #f2f1f1;
+  --scrollbar-bg: transparent;
+  --scrollbar-color: rgba(0, 0, 0, 0.25);
+  --category-color: #0085f2;
+  --category-color-background: #0085f210;
+  --code-color: #5e9eff;
+  --mark-color: #dce2f2;
+  --plus-code-color: #0069c2;
+  --html-code-color: #9e0027;
+  --css-code-color: #0069c2;
+  --js-code-color: #746a00;
+  --http-code-color: #007936;
+  --apis-code-color: #872bff;
+  --learn-code-color: #d00058;
+  --plus-mark-color: #ffd9dc;
+  --html-mark-color: #ffd9dc;
+  --css-mark-color: #dce2f2;
+  --js-mark-color: #f0e498;
+  --http-mark-color: #a9f3ba;
+  --apis-mark-color: #e6deff;
+  --learn-mark-color: #ffd9df;
 }
 .dark {
   color-scheme: dark;
@@ -42,12 +75,12 @@
   --text-secondary: #cdcdcd;
   --text-inactive: #cdcdcda6;
   --text-link: #8cb4ff;
-  --text-invert: #1b1b1b;
+  --text-invert: #3d4451;
   --text-primary-red: #ff97a0;
   --text-primary-green: #00d061;
   --text-primary-blue: #8cb4ff;
   --text-primary-yellow: #c7b700;
-  --background-primary: #1b1b1b;
+  --background-primary: #3d4451;
   --background-secondary: #343434;
   --background-tertiary: #4e4e4e;
   --background-toc-active: #343434;
@@ -71,6 +104,39 @@
   --icon-critical: #ff707f;
   --icon-success: #00b755;
   --accent-primary: #5e9eff;
+  --shadow-01: 0px 1px 2px rgba(251, 251, 254, 0.2);
+  --shadow-02: 0px 1px 6px rgba(251, 251, 254, 0.2);
+  --focus-01: 0px 0px 0px 3px rgba(251, 251, 254, 0.5);
+  --field-focus-border: #fff;
+  --code-token-tag: #c1cff1;
+  --code-token-punctuation: #9e9e9e;
+  --code-token-attribute-name: #ff97a0;
+  --code-token-attribute-value: #00d061;
+  --code-token-comment: #9e9e9e;
+  --code-token-default: #fff;
+  --code-token-selector: #bea5ff;
+  --code-background-inline: #343434;
+  --code-background-block: #343434;
+  --scrollbar-bg: transparent;
+  --scrollbar-color: rgba(255, 255, 255, 0.25);
+  --category-color: #8cb4ff;
+  --category-color-background: #8cb4ff70;
+  --code-color: #c1cff1;
+  --mark-color: #004d92;
+  --plus-code-color: #c1cff1;
+  --html-code-color: #f9f9fb;
+  --css-code-color: #c1cff1;
+  --js-code-color: #c7b700;
+  --http-code-color: #00d061;
+  --apis-code-color: #bea5ff;
+  --learn-code-color: #ff93aa;
+  --plus-mark-color: #9e0027;
+  --html-mark-color: #9e0027;
+  --css-mark-color: #004d92;
+  --js-mark-color: #564e00;
+  --http-mark-color: #005a26;
+  --apis-mark-color: #6800cf;
+  --learn-mark-color: #9e0041;
 }
 body,
 :root {
@@ -79,7 +145,7 @@ body,
 @media (prefers-color-scheme: light) {
   :root:not(.light):not(.dark) {
     color-scheme: light;
-    --text-primary: #1b1b1b;
+    --text-primary: #3d4451;
     --text-secondary: #4e4e4e;
     --text-inactive: #9e9e9ea6;
     --text-link: #0069c2;
@@ -94,10 +160,10 @@ body,
     --background-toc-active: #ebeaea;
     --border-primary: #cdcdcd;
     --border-secondary: #cdcdcd;
-    --button-primary-default: #1b1b1b;
+    --button-primary-default: #3d4451;
     --button-primary-hover: #696969;
     --button-primary-active: #9e9e9e;
-    --button-primary-inactive: #1b1b1b;
+    --button-primary-inactive: #3d4451;
     --button-secondary-default: #fff;
     --button-secondary-hover: #cdcdcd;
     --button-secondary-active: #cdcdcd;
@@ -112,6 +178,39 @@ body,
     --icon-critical: #d30038;
     --icon-success: #007936;
     --accent-primary: #0085f2;
+    --shadow-01: 0px 1px 2px rgba(43, 42, 51, 0.05);
+    --shadow-02: 0px 1px 6px rgba(43, 42, 51, 0.1);
+    --focus-01: 0px 0px 0px 3px rgba(0, 144, 237, 0.4);
+    --field-focus-border: #0085f2;
+    --code-token-tag: #0069c2;
+    --code-token-punctuation: #9e9e9e;
+    --code-token-attribute-name: #d30038;
+    --code-token-attribute-value: #007936;
+    --code-token-comment: #9e9e9e;
+    --code-token-default: #3d4451;
+    --code-token-selector: #872bff;
+    --code-background-inline: #f2f1f1;
+    --code-background-block: #f2f1f1;
+    --scrollbar-bg: transparent;
+    --scrollbar-color: rgba(0, 0, 0, 0.25);
+    --category-color: #0085f2;
+    --category-color-background: #0085f210;
+    --code-color: #5e9eff;
+    --mark-color: #dce2f2;
+    --plus-code-color: #0069c2;
+    --html-code-color: #9e0027;
+    --css-code-color: #0069c2;
+    --js-code-color: #746a00;
+    --http-code-color: #007936;
+    --apis-code-color: #872bff;
+    --learn-code-color: #d00058;
+    --plus-mark-color: #ffd9dc;
+    --html-mark-color: #ffd9dc;
+    --css-mark-color: #dce2f2;
+    --js-mark-color: #f0e498;
+    --http-mark-color: #a9f3ba;
+    --apis-mark-color: #e6deff;
+    --learn-mark-color: #ffd9df;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -121,12 +220,12 @@ body,
     --text-secondary: #cdcdcd;
     --text-inactive: #cdcdcda6;
     --text-link: #8cb4ff;
-    --text-invert: #1b1b1b;
+    --text-invert: #3d4451;
     --text-primary-red: #ff97a0;
     --text-primary-green: #00d061;
     --text-primary-blue: #8cb4ff;
     --text-primary-yellow: #c7b700;
-    --background-primary: #1b1b1b;
+    --background-primary: #3d4451;
     --background-secondary: #343434;
     --background-tertiary: #4e4e4e;
     --background-toc-active: #343434;
@@ -150,6 +249,39 @@ body,
     --icon-critical: #ff707f;
     --icon-success: #00b755;
     --accent-primary: #5e9eff;
+    --shadow-01: 0px 1px 2px rgba(251, 251, 254, 0.2);
+    --shadow-02: 0px 1px 6px rgba(251, 251, 254, 0.2);
+    --focus-01: 0px 0px 0px 3px rgba(251, 251, 254, 0.5);
+    --field-focus-border: #fff;
+    --code-token-tag: #c1cff1;
+    --code-token-punctuation: #9e9e9e;
+    --code-token-attribute-name: #ff97a0;
+    --code-token-attribute-value: #00d061;
+    --code-token-comment: #9e9e9e;
+    --code-token-default: #fff;
+    --code-token-selector: #bea5ff;
+    --code-background-inline: #343434;
+    --code-background-block: #343434;
+    --scrollbar-bg: transparent;
+    --scrollbar-color: rgba(255, 255, 255, 0.25);
+    --category-color: #8cb4ff;
+    --category-color-background: #8cb4ff70;
+    --code-color: #c1cff1;
+    --mark-color: #004d92;
+    --plus-code-color: #c1cff1;
+    --html-code-color: #f9f9fb;
+    --css-code-color: #c1cff1;
+    --js-code-color: #c7b700;
+    --http-code-color: #00d061;
+    --apis-code-color: #bea5ff;
+    --learn-code-color: #ff93aa;
+    --plus-mark-color: #9e0027;
+    --html-mark-color: #9e0027;
+    --css-mark-color: #004d92;
+    --js-mark-color: #564e00;
+    --http-mark-color: #005a26;
+    --apis-mark-color: #6800cf;
+    --learn-mark-color: #9e0041;
   }
 }
 :root {
@@ -211,9 +343,9 @@ body,
   --z-index-low: 100;
   --z-index-search-results-home: 99;
   /* Features */
-  --elem-radius: 0.25rem;
+  --elem-radius: 0.5rem;
   --focus-effect: 0 0 0 3px var(--accent-primary);
-  --form-elem-height: 2rem;
+  --form-elem-height: 3rem;
   /* Major Components */
   --sticky-header-height: 0;
   --top-nav-height: 4rem;
