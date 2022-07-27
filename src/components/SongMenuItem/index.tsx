@@ -1,7 +1,7 @@
 import { FunctionComponent, useRef, memo } from "react";
 import testImg from '~/assets/images/test.jpg';
 import { PlayOne, Play, User } from '@icon-park/react';
-import { unitConverter } from '~/utils/BaseUtil';
+import { unitConverter } from '~/utils/date/index';
 import { SongMenuType } from '~/types/index';
 import { useHover } from "ahooks";
 import { useNavigate } from 'react-router-dom';

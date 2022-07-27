@@ -1,7 +1,7 @@
 import { Right, RightOne } from "@icon-park/react";
 import { useHover } from "ahooks";
 import { FunctionComponent, useEffect, useRef, useState } from "react";
-import { getTsFormatDate } from '~/utils/BaseUtil';
+import { getTsFormatDate } from '~/utils/date/index';
 import { getSongListDetail } from '~/services/api/songList';
 import { getMusicDetail } from '~/services/api/music';
 

@@ -1,7 +1,9 @@
 import "./index.css";
 import storeImg from "./img/store.png";
 
-function Loading() {
+const Loading = () => {
+  // console.log("Loading");
+
   return (
     <div className="loading-container">
       <img src={storeImg} alt="商店图标" />
@@ -10,6 +12,6 @@ function Loading() {
       </div>
     </div>
   );
-}
+};
 
-export { Loading };
+export default Loading;

@@ -31,8 +31,8 @@ svg.icon {
 .icon {
   each(@icons,{
     &.icon-@{value}{
-        mask-image: url("./assets/icons/@{value}.svg");
-        -webkit-mask-image: url("./assets/icons/@{value}.svg");
+        mask-image: url("/src/assets/icons/@{value}.svg");
+        -webkit-mask-image: url("/src/assets/icons/@{value}.svg");
     }
   });
 }

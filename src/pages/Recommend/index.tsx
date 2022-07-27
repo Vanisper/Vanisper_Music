@@ -1,7 +1,7 @@
 import { FunctionComponent, useEffect, useState, memo } from "react";
 import { getPersonalized, getBanner, getPrivateContent, getRecommendNewSong, getRecommendMV } from '~/services/api/recommend';
 import { Right, TopBar } from '@icon-park/react';
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 import { SongMenuType } from '~/types/index';
 // ********************************************** 组件和hooks
 import SlideShow from './components/SlideShow';

@@ -1,6 +1,4 @@
 import ReactDOM from "react-dom/client";
-
-import("@/css/index.less"); // 引入样式
 import App from "./pages/App";
 // 工具
 import { scalable } from "./utils/scalable/index";

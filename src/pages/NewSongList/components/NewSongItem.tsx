@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import { PlayOne } from '@icon-park/react';
-import { formatDuring } from '~/utils/BaseUtil';
+import { formatDuring } from '~/utils/date/index';
 
 interface NewSongType {
   index: number

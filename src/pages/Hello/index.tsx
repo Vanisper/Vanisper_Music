@@ -1,19 +1,20 @@
 import { FunctionComponent, useEffect } from "react";
-// import { getPersonalized, getBanner } from '~/services/api/recommend';
 
 interface HelloProps {}
 
 const Hello: FunctionComponent<HelloProps> = () => {
-  useEffect(() => {
-    // getPersonalized({limit: 10}).then((res: any) => {
-    //   console.log(res);
-    // })
-    // getBanner({ type: 0 }).then((res: any) => {
-    //   console.log(res);
-    // })
-  }, []);
+  useEffect(() => {}, []);
 
-  return <div className="text-center">你好世界！</div>;
+  return (
+    <div>
+      你好世界！
+      <div>777</div>
+      <img
+        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wEaz?ver=0eaa"
+        alt=""
+      />
+    </div>
+  );
 };
 
 export default Hello;

@@ -2,7 +2,7 @@ import { Download, Like, MusicOne } from "@icon-park/react";
 import { FunctionComponent, useEffect, useState } from "react";
 import { getSongListAllMusic } from '~/services/api/songList';
 import { useParams } from 'react-router-dom';
-import { formatDuring } from '~/utils/BaseUtil';
+import { formatDuring } from '~/utils/date/index';
 import Loading from '~/components/Loading/index';
 import { useAppContext } from '~/context/AppContext';
 

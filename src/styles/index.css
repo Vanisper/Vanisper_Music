@@ -53,7 +53,3 @@ code {
   font-family: "Lai Hu";
   src: url("../assets/fonts/濑户字体简体.ttf");
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

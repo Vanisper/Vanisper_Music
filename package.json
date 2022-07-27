@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve-dev": "cd server && nodemon src/app.ts",
+    "serve-build": "cd server && tsc -p .",
+    "serve-run": "cd server && node dist/app.js"
   },
   "dependencies": {
     "@icon-park/react": "^1.4.2",

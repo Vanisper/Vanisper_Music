@@ -3,7 +3,30 @@
   "theme": {
     "lists": ["light", "dark", "os-default"],
     "default": "light",
-    "isAuto": false,
-    "autoValue": "light"
+    "isAuto": true,
+    "autoValue": ""
+  },
+  "api": {
+    "kuwo": {
+      "search": {
+        "type": "get",
+        "url": "http://127.0.0.1:5000/search",
+        "headers": {},
+        "params": {
+          "kw": "伟大的作品",
+          "pn": "1",
+          "rn": "25",
+          "format": ""
+        }
+      },
+      "download": {
+        "type": "get",
+        "url": "http://127.0.0.1:5000/download",
+        "headers": {},
+        "params": {
+          "rid": "226543302"
+        }
+      }
+    }
   }
 }

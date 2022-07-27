@@ -1,6 +1,6 @@
 import { Download, FolderPlus, LightMember, PlayOne, Plus, Share } from "@icon-park/react";
 import { FunctionComponent, useEffect } from "react";
-import { getTsFormatDate, unitConverter } from '~/utils/BaseUtil';
+import { getTsFormatDate, unitConverter } from '~/utils/date/index';
 
 interface CoverTitleBarProps {
   details: CoverInfoType | null

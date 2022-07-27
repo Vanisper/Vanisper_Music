@@ -21,9 +21,18 @@ const scalable = () => {
           event.keyCode === 109 ||
           event.keyCode === 187 ||
           event.keyCode === 189)
+        // || event.keyCode === 83 || // S按键
+        // event.keyCode === 123) // F12
       ) {
         event.preventDefault();
       }
+    },
+    false
+  );
+  document.addEventListener(
+    "contextmenu",
+    (event) => {
+      // event.preventDefault();
     },
     false
   );
