@@ -1,6 +1,6 @@
 import express from "express";
 import config from "./config/app.json";
-import { searchRoutes, downloadRouters } from "./routes/index";
+import { searchRoutes, downloadRouters, wxCheckRouters } from "./routes/index";
 
 const app = express();
 //设置允许跨域访问该服务.
@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
 });
 app.use(searchRoutes);
 app.use(downloadRouters);
+app.use(wxCheckRouters);
 
 app.listen(config.port, () => {
   console.clear();

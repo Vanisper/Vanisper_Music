@@ -16,8 +16,12 @@ downloadRouters.get("/download", async (req, res) => {
   }
 });
 
-const getMp3Url = async (rid: number) => {
+const getMp3Url = async (rid: number, format?: string) => {
   downloadParams.rid = rid + "";
+  downloadParams.format = "mp3|aac";
+  if (format) {
+    downloadParams.format = format;
+  }
   let mp3Url = "";
   await axios
     .get(downloadBaseUrl, {

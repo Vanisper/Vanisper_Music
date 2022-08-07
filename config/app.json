@@ -10,7 +10,7 @@
     "kuwo": {
       "search": {
         "type": "get",
-        "url": "http://127.0.0.1:5000/search",
+        "url": "http://124.221.81.26:3000/search",
         "headers": {},
         "params": {
           "kw": "伟大的作品",
@@ -21,7 +21,7 @@
       },
       "download": {
         "type": "get",
-        "url": "http://127.0.0.1:5000/download",
+        "url": "http://124.221.81.26:3000/download",
         "headers": {},
         "params": {
           "rid": "226543302"
